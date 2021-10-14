@@ -4,9 +4,9 @@ function TextPresentation(props){
     return (
         <div className="TextPresentation" >
             <h2 className="textPresentationTitle" >
-                We're 
+                WE'RE <br/>
                 <span className="textPresentationTitleStrong" >
-                    coming soon
+                    COMING SOON
                 </span>
             </h2>
             <p className="textPresentationParagraph" >

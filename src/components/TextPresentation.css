@@ -1,3 +1,28 @@
+
+.TextPresentation{
+    max-width: 100%; 
+}
+
+.textPresentationTitle{
+    text-align: center; 
+    font-size: 40px; 
+    font-weight: 300; 
+    line-height: 42px; 
+    letter-spacing: 11px; 
+    color: #CE9898;
+}
+.textPresentationTitleStrong{
+    font-weight: 600; 
+    color: #423A3A;
+}
+
+.textPresentationParagraph{
+    font-size: 14px; 
+    font-weight: 500; 
+    line-height: 22px; 
+    text-align: center; 
+    color: #CE9898;
+}
 .textPresentationParagraph {
     margin: 16px 0 0 0 ; 
 }
