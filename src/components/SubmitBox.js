@@ -1,10 +1,12 @@
 import './SubmitBox.css'; 
+import Submit from './Submit'; 
+
 
 function SubmitBox(props){
     return (
         <form className="SubmitBox" >
-            
-            <p className="errorText" >
+            <Submit className={props.wrngCtnClassName}/>
+            <p className={props.errorTextClassName} >
                 Please provide a valid email
             </p>
         </form>
@@ -12,3 +14,7 @@ function SubmitBox(props){
 }
 
 export default SubmitBox; 
+
+/*  warningContainer 
+
+errotText */ 

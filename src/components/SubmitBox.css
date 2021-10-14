@@ -1,0 +1,12 @@
+.SubmitBox {
+    display: flex; 
+    flex-direction: column; 
+    margin: 32px 0 0 0; 
+}
+.errorText{
+    display: none; 
+}
+.errorTextActive{
+    display: block; 
+    margin: 8px 0 0 24px; 
+}

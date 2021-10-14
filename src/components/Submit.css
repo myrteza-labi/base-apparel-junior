@@ -1,0 +1,29 @@
+.Submit{
+    height: 48px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.submitInput{
+    height: 100%; 
+    width: 185px; 
+}
+.warningContainer{
+    width: 0; 
+    height: 0; 
+    background-image: url("../images/icon-error.svg"); 
+    background-position: contain; 
+}
+
+.warningContainerActive{
+    width: 24px; 
+    height: 24px; 
+    background-image: url("../images/icon-error.svg"); 
+    background-position: contain; 
+}
+
+.submitBtn {
+    height: 100%; 
+    width: 64px; 
+}

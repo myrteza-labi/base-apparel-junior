@@ -5,10 +5,9 @@ function Submit(props){
     return (
         <div className="Submit" >
 
-            <input  className="submitInput" name="email" type="email" placeholder="Email Adress"/>
+            <input  className="submitInput" name="email" type="email"/>
 
-            <div className="warningContainer" >
-                <img className="warningImg" src={warningLogo} alt={"icon attention"} />
+            <div className={props.className} >
             </div>
             <input className="submitBtn" type="submit" value={"click"}/>
 
@@ -17,3 +16,4 @@ function Submit(props){
 }
 
 export default Submit; 
+

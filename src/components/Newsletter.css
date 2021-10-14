@@ -1,0 +1,8 @@
+.Newsletter {
+    width: 375px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
