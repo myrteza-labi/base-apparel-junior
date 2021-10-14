@@ -8,3 +8,16 @@
     width: 100px; 
     height: 100%; 
 }
+
+/* desktop style */
+@media screen and (min-width: 1440px){
+    .Logo {
+        position: absolute; 
+        top: 65px; 
+        left: 165px; 
+    }
+    .imgLogo{
+        width: 158px;
+        height: 33px; 
+    }
+}

@@ -6,3 +6,13 @@
     background-repeat: no-repeat; 
 }
 
+
+/* desktop style */
+@media screen and (min-width: 1440px){
+    .Banner {
+        background-image : url("../images/hero-desktop.jpg"); 
+        width: 610px; 
+        height: 100%; 
+        order: 2; 
+    }
+}

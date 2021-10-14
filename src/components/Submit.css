@@ -27,3 +27,13 @@
     height: 100%; 
     width: 64px; 
 }
+
+/* desktop style */
+@media screen and (min-width: 1440px){
+    .Submit {
+        height: 56px; 
+    }
+    .submitInput{
+        width: 260px;
+    }
+}
