@@ -8,6 +8,7 @@
 /* desktop style */
 @media screen and (min-width: 1440px){
     .RegistrationBox {
+        z-index: 1; 
         width: 445px; 
         margin: 235px 0 160px 165px; 
         order: 1; 

@@ -1,16 +1,19 @@
 import './Submit.css'; 
-import warningLogo from '../images/icon-error.svg'; 
 import arrowIcon from '../images/icon-arrow.svg'; 
 
 function Submit(props){
+    
     return (
         <div className="Submit" >
 
-            <input  className="submitInput" name="email" type="email" placeholder="Email Address"/>
+            <input /*a reetirer*/ id="inputEmail" onChange={props.onChange} className="submitInput" name="email" type="email" placeholder="Email Address" />
 
             <div className={props.className} >
             </div>
-            <button className="submitBtn"><img className="arrowI" src={arrowIcon} alt="icon fleche" /></button>
+
+            <button className="submitBtn" onClick={props.handleBtnClick}>
+                <img className="arrowI" src={arrowIcon} alt="icon fleche" />
+            </button>
             
         </div>
     )
