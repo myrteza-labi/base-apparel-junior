@@ -3,7 +3,6 @@ import Submit from './Submit';
 import React from 'react';
 
 
-const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
 class SubmitBox extends React.Component{
@@ -12,7 +11,7 @@ class SubmitBox extends React.Component{
         this.state = { 
             errorTextClassName : "textError",
             wrngCtnClassName: "warningContainer",
-            /*errorState : false,*/
+            submitClassName : "Submit",
             email: "",
         }
         this.handleClick = this.handleClick.bind(this); 
@@ -24,6 +23,8 @@ class SubmitBox extends React.Component{
         this.removeWarningBox = this.removeWarningBox.bind(this);
         this.displayTextError = this.displayTextError.bind(this); 
         this.removeTextError = this.removeTextError.bind(this); 
+        this.displaySubmitBorderError = this.displaySubmitBorderError.bind(this); 
+        this.removeSubmitBorderError = this.removeSubmitBorderError.bind(this); 
     }
 
     onChange(){
@@ -32,6 +33,12 @@ class SubmitBox extends React.Component{
         this.setState({
             email : value,
         })
+        if(this.checkEmail() === true){
+            this.removeErrorUi(); 
+        } 
+        else {
+            return
+        }
     }
 
     handleClick(){
@@ -73,6 +80,22 @@ class SubmitBox extends React.Component{
         })
     }
 
+
+     /* "Submit" mean the Submit component and this function is to add red border 
+     when the patern of the email is not respected */
+
+    displaySubmitBorderError(){
+        this.setState({    
+            submitClassName : "Submit SubmitError", 
+        })
+    }
+
+    removeSubmitBorderError(){
+        this.setState({    
+            submitClassName : "Submit", 
+        })
+    }
+
         
     /* "Warning Box" mean the red warning Icon */
 
@@ -93,12 +116,15 @@ class SubmitBox extends React.Component{
     displayErrorUi(){
         this.displayTextError(); 
         this.displayWarningBox(); 
+        this.displaySubmitBorderError(); 
+
     }
 
 
     removeErrorUi(){
         this.removeTextError(); 
         this.removeWarningBox(); 
+        this.removeSubmitBorderError();
     }
 
     
@@ -106,7 +132,8 @@ class SubmitBox extends React.Component{
     render(){
         return (
             <div className="SubmitBox" >
-                <Submit className={this.state.wrngCtnClassName} 
+                <Submit className={this.state.submitClassName}
+                        wrnCtnClassName={this.state.wrngCtnClassName} 
                         handleBtnClick={()=> this.handleClick()}
                         onChange={()=> this.onChange()}/>
 
