@@ -24,14 +24,7 @@
         flex-direction: row; 
         justify-content: space-between ; 
     }
-    /*
-    .bgShape1{
-        background-image: url("../images/bg-pattern-desktop.svg");
-        width: 417px; 
-        height: 423px; 
-        bottom: 0; 
-        right: 0; 
-    }*/
+
     .bgShape1{
         background-image: url("../images/bg-pattern-desktop.svg");
         width: 788px; 

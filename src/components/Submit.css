@@ -7,12 +7,12 @@
     border-radius: 30px; 
     border: 1.5px solid rgba(206, 152, 152, 0.5);
 }
+
 .SubmitError {
     border: 2px solid #F96464;
 }
 
-
-.submitInput{
+.submitInput {
     height: 100%; 
     width: 185px; 
     background : transparent;
@@ -20,19 +20,7 @@
     margin-left: 25px; 
 }
 
-
-
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px #FFF4F4 inset !important;
-    border: none !important; 
-}
-
-
-.submitInput:focus{
+.submitInput:focus { 
     outline: none; 
 }
 
@@ -43,6 +31,21 @@ input:-webkit-autofill:active{
     color: #CE9898; 
     opacity: 0.5; 
     line-height: 28px; 
+}
+
+
+
+/* 
+! this style concern the "submitInput" element !
+to delete the autofill style added by the navigator with 
+the "!important" is necessary because they have writen their style
+code with "!important" to  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px #FFF4F4 inset !important;
+    border: none !important; 
 }
 
 .warningContainer{    
@@ -75,7 +78,9 @@ input:-webkit-autofill:active{
     background-image: url("../images/icon-error.svg"); 
     background-position: contain;
 }
-.arrowI{
+
+/* the arrow icon inside the button*/
+.arrow{
     width: 9px; 
     height: 18px; 
 }
